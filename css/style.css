@@ -142,6 +142,7 @@ button:active {
 .container div {
   display: flex;
   align-items: center;
+  
   /* 
   gap: 2rem; */
 }
@@ -285,8 +286,8 @@ button:active {
 .container{
   background-color: #f8f9f9;
   display: flex;
-  justify-content: center;
-  gap: 12px;
+  /* justify-content: center; */
+  /* gap: 12px; */
   /* border-bottom: 15px; */
 }
 .search-container {
