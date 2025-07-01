@@ -127,13 +127,14 @@ button:active {
   position: relative;
   width: 100%;
   height: 80px;
+  background-color: #ffffff;
 }
 
 .container {
   position: sticky;
+  display: flex;
   inset: 0;
-  background: #ffffff;
-  /* display: flex; */
+  background-color: #ffffff;
   flex-direction: row;
   justify-content: start;
   align-items: center;
@@ -142,7 +143,7 @@ button:active {
 .container div {
   display: flex;
   align-items: center;
-  
+
   /* 
   gap: 2rem; */
 }
@@ -151,8 +152,6 @@ button:active {
 } */
 .btn {
   padding: 0.5em 1.5em 0.5rem 0rem;
-  /* font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
@@ -210,17 +209,6 @@ button:active {
   );
   z-index: 20;
 }
-/* .word {
-  display: block;
-  height: 100%;
-  padding: 4px 8px;
-  margin: 2px 0;
-  color: #505faa;
-  background-color: #f8f9f9;
-  border: 2px solid #f8f9f9;
-  border-radius: 5px;
-  animation: spin_4991 4s infinite;
-} */
 
 .word {
   display: block;
@@ -279,17 +267,10 @@ button:active {
 }
 .items-service {
   width: 80%;
-  /* linear-gradient(135deg,rgb(179,208,253)0%,rgb(164,202,248)100%)*/ */
   border-radius: 3px;
   margin: 60px 0px;
 }
-.container{
-  background-color: #f8f9f9;
-  display: flex;
-  /* justify-content: center; */
-  /* gap: 12px; */
-  /* border-bottom: 15px; */
-}
+
 .search-container {
   margin: 20px 0px;
   position: relative;
@@ -297,7 +278,7 @@ button:active {
   justify-content: space-between;
   width: 100%;
   height: 73px;
-  border: solid #C5CAE3 2px;
+  border: solid #c5cae3 2px;
   background-color: #ffffff;
   /* background: linear-gradient(
     135deg,
@@ -332,17 +313,16 @@ button:active {
   );
   z-index: -1;
 }
-.search-svg{
+.search-svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F58B21;
+  background-color: #f58b21;
   height: 50px;
   width: 50px;
   border-radius: 5px;
   margin: 5px;
 }
-
 
 .input {
   padding: 10px;
@@ -362,14 +342,15 @@ button:active {
   font-size: 17px;
   caret-color: #878787;
 }
-.input ::placeholder{
+.input ::placeholder {
   font-size: 20px;
   /*text-align: center;
-  */color: #050505;
+  */
+  color: #050505;
   padding: 0em 100em;
   text-align: center;
 }
-.view-suggestion{
+.view-suggestion {
   display: flex;
   gap: 15px;
   overflow-x: auto;
@@ -380,7 +361,7 @@ button:active {
 
 .item-suggestion {
   flex: 0 0 auto;
-  width:300px ;
+  width: 300px;
   height: 50px;
   text-align: center;
   background-color: #ffffff;
@@ -388,25 +369,23 @@ button:active {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  /* text-transform: uppercase; */
-  /* letter-spacing: 2px; */
-  /*cursor:alias;
-  */border-radius: 10px;
-  border: 2px solid #C5CAE3;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
+  border: 2px solid #f8f9f9;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: red 0.5s ease, color 0.5s ease;
   -webkit-transition: red 0.5s ease, color 0.5s ease;
   -moz-transition: red 0.5s ease, color 0.5s ease;
   -ms-transition: red 0.5s ease, color 0.5s ease;
   -o-transition: red 0.5s ease, color 0.5s ease;
 }
-.item-price{
+.item-price {
   color: #050505;
-  transition:red 0.5s ease ;
-  -webkit-transition:red 0.5s ease ;
-  -moz-transition:red 0.5s ease ;
-  -ms-transition:red 0.5s ease ;
-  -o-transition:red 0.5s ease ;
+  transition: red 0.5s ease;
+  -webkit-transition: red 0.5s ease;
+  -moz-transition: red 0.5s ease;
+  -ms-transition: red 0.5s ease;
+  -o-transition: red 0.5s ease;
 }
 .item-suggestion p {
   color: #878787;
@@ -418,39 +397,72 @@ button:active {
 }
 
 .item-suggestion:hover {
- /* transition: .4s;
+  /* 
  border: 2px none #fff; */
- background-color: #505faa;
- /* color: #FAE405;.کدمو درست کن */
- 
+  background-color: #505faa;
+  transition: 0.4s;
+  /* color: #FAE405;.کدمو درست کن */
 }
 .item-suggestion:hover .item-price {
-  color: #FAE405;  
+  color: #fae405;
 }
 
-/* .item-suggestion p{
- border: 2px solid #fff;
- box-shadow: rgba(255, 255, 255, 0.986) 0px 2px 5px -1px, rgb(238, 231, 231) 0px 1px 3px -1px;
- transition: .4s;
- -webkit-transition: .4s;
- -moz-transition: .4s;
- -ms-transition: .4s;
- -o-transition: .4s;
+.item-suggestion:hover p {
+  color: #ffffff; /* سفید */
 }
-.item-suggestion p :hover{
-transition: .4s;
- border: 2px none #fff;
- background-color: #fff;
- color: #fffFFF;
-} */
-
-/* .item-suggestion:active {
- background-color: #505faa;
-} */
-
-/* .item-price{
-  color: #050505;
-} */
- .item-suggestion:hover p {
-  color: #ffffff;  /* سفید */
+.Sevices-host {
+  margin: 50px 60px;
+}
+.hosts-List {
+  /* margin: 50px 60px; */
+}
+.host-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9f9;
+}
+.items-host {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* display: grid;
+  grid-template-columns: repeat(2, 30em);
+  grid-template-rows: repeat(5, 1fr); */
+  gap: 18px;
+}
+.Service-box {
+  display: flex;
+  align-items: center;
+  width: 620px;
+  height: 221px;
+  border: solid 2px #dbdce0;
+  border-radius: 15px;
+  background-color: #ffffff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.Service-content {
+  width: 350px;
+  height: 150px;
+  margin: 10px;
+}
+.show {
+  background-color: #f8f9f9;
+  color: #505faa;
+  display: inline-block;
+  margin-top: 15px;
+  width: 145px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-align: center;
+}
+.show:hover {
+  background-color: #505faa;
+  transition: 0.4s;
+  color: #ffffff;
 }
