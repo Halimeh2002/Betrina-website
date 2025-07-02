@@ -124,6 +124,7 @@ button:active {
   transform: translateY(0);
 }
 .nav {
+  display: flex;
   position: relative;
   width: 100%;
   height: 80px;
@@ -418,18 +419,20 @@ button:active {
 }
 .host-name {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f8f9f9;
+  margin: 150px 0px 45px 0px;
 }
 .items-host {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   /* display: grid;
   grid-template-columns: repeat(2, 30em);
   grid-template-rows: repeat(5, 1fr); */
-  gap: 18px;
+  gap: 19px;
 }
 .Service-box {
   display: flex;
@@ -444,18 +447,51 @@ button:active {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
+.Service-hosts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 396px;
+  height: 275px;
+  border: solid 2px #dbdce0;
+  border-radius: 15px;
+  background-color: #ffffff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.items-host-last {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+  margin: 40px 60px;
+}
+.Service-hosts-last {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 293px;
+  height: 275px;
+  border: solid 2px #dbdce0;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
 .Service-content {
-  width: 350px;
-  height: 150px;
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 350px;
+  height: 150px; */
 }
 .show {
-  background-color: #f8f9f9;
-  color: #505faa;
+  background-color: #e2e9e9;
+  color: #37458b;
   display: inline-block;
   margin-top: 15px;
-  width: 145px;
-  height: 50px;
   border: none;
   border-radius: 10px;
   padding: 10px 15px;
@@ -465,4 +501,10 @@ button:active {
   background-color: #505faa;
   transition: 0.4s;
   color: #ffffff;
+}
+.Support {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 6px;
 }
