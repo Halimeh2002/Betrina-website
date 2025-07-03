@@ -137,7 +137,7 @@ button:active {
   inset: 0;
   background-color: #ffffff;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   padding: 0em;
 }
@@ -503,8 +503,50 @@ button:active {
   color: #ffffff;
 }
 .Support {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  margin: 50px 60px;
+  color: #7a7c7c;
+}
+.Support-text {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.Support-li {
+  list-style: none;
+  display: flex;
+}
+.Support-h {
+  color: #354281;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.Support-b {
+  line-height: 40px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.profile-img {
+  margin: 0px 0px 0px 70px;
+}
+.items-answering {
+  margin: 50px 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px 6px;
+  gap: 15px;
+}
+.item-answering {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.answering-t {
+  line-height: 30px;
 }
